@@ -1,0 +1,106 @@
+// Grayroad
+{
+  "variables":
+  {
+    "zero": "#0000",
+    "gray0": "#666",
+    "gray1": "#ccc",
+    "gray2": "#ddd",
+    "gray3": "#eee",
+    "caret": "#fa46",
+    "highlight": "#cbad",
+    "pp0": "#87d",
+    // "pp1":
+    // "pp2":
+    // "yl0": "#db7"
+    // "pp0":
+    // "bl0":
+  },
+  "globals":
+  {
+    "background": "var(gray2)",
+    "caret": "var(caret)",
+    "block_caret": "var(caret)",
+    "block_caret_border": "var(zero)",
+    "line_highlight": "var(gray3)",
+    "gutter": "var(gray1)",
+    "gutter_foreground": "var(gray0)",
+    "gutter_foreground_highlight": "var(gray0)",
+    "selection": "var(highlight)",
+    "selection_border": "var(zero)",
+    "highlight": "var(highlight)",
+    "find_highlight": "var(highlight)",
+    "brackets_foreground": "black",
+    "bracket_contents_foreground": "black",
+  },
+  "rules":
+  [
+    {
+      "name": "Comments",
+      "scope": "comment",
+      "font_style": "italic",
+      "foreground": "var(gray0)",
+    },
+    {
+      "name": "Functions and Classes",
+      "scope": "entity.name.function, storage.type.function, entity.name.class",
+      "foreground": "var(pp0)",
+      "background": "var(gray3)"
+    },
+    {
+      "name": "Function calls",
+      "scope": "variable.function, support.class.ruby",
+      "foreground": "var(pp0)",
+    },
+    {
+      "name": "Variables",
+      "scope": "variable.other, entity.name",
+      "foreground": ["#045", "#09b"]
+    },
+    {
+      "name": "Function parameters",
+      "scope": "variable.parameter",
+      "foreground": "#d6a43b"
+    },
+    {
+      "name": "Operators",
+      "scope": "keyword.operator",
+      "foreground": "#a54"
+    },
+    {
+      "name": "Keywords, Function & Class declarations",
+      "scope": "keyword, keyword.declaration.function, keyword.declaration.class",
+      "foreground": "#d08770"
+    },
+    {
+      "name": "Strings",
+      "scope": "string",
+      "foreground": "#46b300"
+    },
+    {
+      "name": "Escape characters",
+      "scope": "constant.character.escape",
+      "foreground": "#0046b3"
+    },
+    {
+      "name": "Integers",
+      "scope": "constant.numeric",
+      "foreground": "#a00",
+    },
+    {
+      "name": "Data types",
+      "scope": "storage.type",
+      "foreground": "#a49"
+    },
+    {
+      "name": "Data modifiers",
+      "scope": "storage.modifier",
+      "foreground": "#b48ead",
+    },
+    {
+      "name": "Invalid and language constants",
+      "scope": "invalid.illegal, constant.language",
+      "foreground": "#f00"
+    }
+  ]
+}
